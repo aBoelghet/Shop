@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GSSubscriptionPopupView" customModule="PickZyShoppingApp" customModuleProvider="target">
+            <connections>
+                <outlet property="cancel_btn" destination="BLO-3U-mty" id="vCT-W7-37E"/>
+                <outlet property="date_btn" destination="zxH-UG-9ad" id="Isw-wn-OaY"/>
+                <outlet property="date_img" destination="DeH-T4-G4q" id="hXe-bM-nkU"/>
+                <outlet property="date_lbl" destination="bFY-s6-rwB" id="rSn-Pm-QJQ"/>
+                <outlet property="duration_btn" destination="KMQ-CT-WuN" id="wqf-Af-ZHE"/>
+                <outlet property="duration_img" destination="Hb4-om-09d" id="NSW-p6-WuZ"/>
+                <outlet property="duration_lbl" destination="wc3-ro-WLR" id="VG0-0o-wiZ"/>
+                <outlet property="ok_btn" destination="f4T-Ut-IVg" id="7A5-Fl-vi8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Cfj-wy-W8E">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cei-Uk-O9m" customClass="GSCornerEdgeView" customModule="PickZyShoppingApp" customModuleProvider="target">
+                    <rect key="frame" x="25" y="184" width="270" height="200"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KZD-LP-ERV">
+                            <rect key="frame" x="0.0" y="155" width="270" height="45"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLO-3U-mty" customClass="GSBaseButton" customModule="PickZyShoppingApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="134.5" height="45"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                    <state key="normal" title="Cancel">
+                                        <color key="titleColor" red="0.18039215689999999" green="0.54901960780000003" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.18039215689999999" green="0.54901960780000003" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="cancelAction:" destination="-1" eventType="touchUpInside" id="dmI-Fd-cXO"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfl-c1-rj6">
+                                    <rect key="frame" x="134.5" y="0.0" width="1" height="45"/>
+                                    <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="1" id="HPx-Um-lLr"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4T-Ut-IVg" customClass="GSBaseButton" customModule="PickZyShoppingApp" customModuleProvider="target">
+                                    <rect key="frame" x="135.5" y="0.0" width="134.5" height="45"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                    <state key="normal" title="OK">
+                                        <color key="titleColor" red="0.18039215689999999" green="0.54901960780000003" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="okAction:" destination="-1" eventType="touchUpInside" id="PKG-7n-EpK"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="f4T-Ut-IVg" firstAttribute="width" secondItem="BLO-3U-mty" secondAttribute="width" id="39u-TY-AC2"/>
+                                <constraint firstAttribute="height" constant="45" id="OeV-Jj-Ibm"/>
+                            </constraints>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscription" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eb-A7-mKd" customClass="GSBaseLabel" customModule="PickZyShoppingApp" customModuleProvider="target">
+                            <rect key="frame" x="77" y="8" width="116.5" height="23"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                            </variation>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="1fD-2r-d9C">
+                            <rect key="frame" x="15" y="41" width="245" height="95"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dtY-NC-jeh" customClass="GSCornerEdgeView" customModule="PickZyShoppingApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="245" height="40"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wc3-ro-WLR" customClass="GSBaseLabel" customModule="PickZyShoppingApp" customModuleProvider="target">
+                                            <rect key="frame" x="93" y="9.5" width="59" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                            </variation>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropdown" translatesAutoresizingMaskIntoConstraints="NO" id="Hb4-om-09d">
+                                            <rect key="frame" x="215" y="10" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="HEZ-r0-x4e"/>
+                                                <constraint firstAttribute="width" constant="20" id="XS7-Mf-V5z"/>
+                                            </constraints>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMQ-CT-WuN">
+                                            <rect key="frame" x="0.0" y="0.0" width="245" height="40"/>
+                                            <connections>
+                                                <action selector="durationAction:" destination="-1" eventType="touchUpInside" id="BZL-3B-jkj"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="Hb4-om-09d" firstAttribute="centerY" secondItem="dtY-NC-jeh" secondAttribute="centerY" id="4Bb-Bc-OwT"/>
+                                        <constraint firstItem="KMQ-CT-WuN" firstAttribute="top" secondItem="dtY-NC-jeh" secondAttribute="top" id="5N7-cO-3vz"/>
+                                        <constraint firstAttribute="bottom" secondItem="KMQ-CT-WuN" secondAttribute="bottom" id="81M-ii-KqB"/>
+                                        <constraint firstAttribute="trailing" secondItem="KMQ-CT-WuN" secondAttribute="trailing" id="9pq-qR-NAD"/>
+                                        <constraint firstItem="KMQ-CT-WuN" firstAttribute="leading" secondItem="dtY-NC-jeh" secondAttribute="leading" id="Y1Y-JJ-urO"/>
+                                        <constraint firstAttribute="trailing" secondItem="Hb4-om-09d" secondAttribute="trailing" constant="10" id="YCj-Ba-d6K"/>
+                                        <constraint firstItem="wc3-ro-WLR" firstAttribute="centerY" secondItem="dtY-NC-jeh" secondAttribute="centerY" id="igv-lE-a9L"/>
+                                        <constraint firstAttribute="height" constant="40" id="l4z-hi-FVB"/>
+                                        <constraint firstItem="wc3-ro-WLR" firstAttribute="centerX" secondItem="dtY-NC-jeh" secondAttribute="centerX" id="z4Z-TH-1zS"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cw5-EI-i42" customClass="GSCornerEdgeView" customModule="PickZyShoppingApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="55" width="245" height="40"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropdown" translatesAutoresizingMaskIntoConstraints="NO" id="DeH-T4-G4q">
+                                            <rect key="frame" x="215" y="10" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="a5n-Si-gIA"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="aoI-72-VAo"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="eCF-m4-aNM"/>
+                                                <constraint firstAttribute="width" constant="20" id="kfe-UP-0iF"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFY-s6-rwB" customClass="GSBaseLabel" customModule="PickZyShoppingApp" customModuleProvider="target">
+                                            <rect key="frame" x="103.5" y="9.5" width="38" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                            </variation>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxH-UG-9ad">
+                                            <rect key="frame" x="0.0" y="0.0" width="245" height="40"/>
+                                            <connections>
+                                                <action selector="dateAction:" destination="-1" eventType="touchUpInside" id="Rzl-HU-iG1"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="zxH-UG-9ad" firstAttribute="top" secondItem="cw5-EI-i42" secondAttribute="top" id="1n2-TX-qQR"/>
+                                        <constraint firstItem="DeH-T4-G4q" firstAttribute="centerY" secondItem="cw5-EI-i42" secondAttribute="centerY" id="GkI-9g-j86"/>
+                                        <constraint firstItem="zxH-UG-9ad" firstAttribute="leading" secondItem="cw5-EI-i42" secondAttribute="leading" id="PJ6-kG-uFG"/>
+                                        <constraint firstAttribute="trailing" secondItem="DeH-T4-G4q" secondAttribute="trailing" constant="10" id="a8H-F9-UOV"/>
+                                        <constraint firstAttribute="bottom" secondItem="zxH-UG-9ad" secondAttribute="bottom" id="cUW-oJ-VOZ"/>
+                                        <constraint firstItem="bFY-s6-rwB" firstAttribute="centerY" secondItem="cw5-EI-i42" secondAttribute="centerY" id="gn8-Yn-PvT"/>
+                                        <constraint firstItem="bFY-s6-rwB" firstAttribute="centerX" secondItem="cw5-EI-i42" secondAttribute="centerX" id="j6N-Ai-qcD"/>
+                                        <constraint firstAttribute="trailing" secondItem="zxH-UG-9ad" secondAttribute="trailing" id="qKn-PR-thH"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KVN-h9-pPr">
+                            <rect key="frame" x="0.0" y="154" width="270" height="1"/>
+                            <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="RaZ-s5-K2g"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="KZD-LP-ERV" firstAttribute="top" secondItem="KVN-h9-pPr" secondAttribute="bottom" id="0bI-hG-jcf"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="350" id="2JT-6e-Y0A"/>
+                        <constraint firstAttribute="bottom" secondItem="KZD-LP-ERV" secondAttribute="bottom" id="8YO-mh-EY4"/>
+                        <constraint firstItem="1fD-2r-d9C" firstAttribute="top" secondItem="2eb-A7-mKd" secondAttribute="bottom" constant="10" id="BBJ-yW-1yN"/>
+                        <constraint firstAttribute="trailing" secondItem="KVN-h9-pPr" secondAttribute="trailing" id="GlN-XJ-7eh"/>
+                        <constraint firstAttribute="height" constant="200" id="N2w-L7-zza"/>
+                        <constraint firstItem="2eb-A7-mKd" firstAttribute="top" secondItem="cei-Uk-O9m" secondAttribute="top" constant="8" id="TU7-RU-wCI"/>
+                        <constraint firstItem="1fD-2r-d9C" firstAttribute="leading" secondItem="cei-Uk-O9m" secondAttribute="leading" constant="15" id="YGE-2D-xWx"/>
+                        <constraint firstAttribute="trailing" secondItem="KZD-LP-ERV" secondAttribute="trailing" id="ZFC-0E-IKk"/>
+                        <constraint firstAttribute="trailing" secondItem="1fD-2r-d9C" secondAttribute="trailing" constant="10" id="ljv-5j-nXE"/>
+                        <constraint firstItem="KVN-h9-pPr" firstAttribute="leading" secondItem="cei-Uk-O9m" secondAttribute="leading" id="wPc-ag-aYv"/>
+                        <constraint firstItem="KZD-LP-ERV" firstAttribute="leading" secondItem="cei-Uk-O9m" secondAttribute="leading" id="wVe-Kr-0xA"/>
+                        <constraint firstItem="2eb-A7-mKd" firstAttribute="centerX" secondItem="cei-Uk-O9m" secondAttribute="centerX" id="xvw-zb-A1m"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="cei-Uk-O9m" firstAttribute="centerX" secondItem="Cfj-wy-W8E" secondAttribute="centerX" id="1bE-qb-tZg"/>
+                <constraint firstItem="BZb-ao-SYv" firstAttribute="trailing" secondItem="cei-Uk-O9m" secondAttribute="trailing" constant="25" id="NVu-Pz-sLa"/>
+                <constraint firstItem="cei-Uk-O9m" firstAttribute="leading" secondItem="BZb-ao-SYv" secondAttribute="leading" constant="25" id="TuI-Qf-fDI"/>
+                <constraint firstItem="cei-Uk-O9m" firstAttribute="centerY" secondItem="Cfj-wy-W8E" secondAttribute="centerY" id="Xq6-QO-BHf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="BZb-ao-SYv"/>
+            <point key="canvasLocation" x="-5" y="117"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dropdown" width="13" height="13"/>
+    </resources>
+</document>

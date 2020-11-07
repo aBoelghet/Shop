@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GSMonthYearPickerView" customModule="PickZyShoppingApp" customModuleProvider="target">
+            <connections>
+                <outlet property="bg_view" destination="Dy2-fX-QJF" id="KWs-Pg-fve"/>
+                <outlet property="pickerView" destination="a9a-gN-Bxn" id="qSn-Bq-HDb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="dmO-vh-9nC">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dy2-fX-QJF" userLabel="bg_view">
+                    <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9a-gN-Bxn">
+                            <rect key="frame" x="0.0" y="50" width="375" height="130"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </pickerView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="43a-zL-NS5">
+                            <rect key="frame" x="30" y="10" width="315" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ute-mz-ebt" customClass="GSBaseButton" customModule="PickZyShoppingApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="132.5" height="30"/>
+                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="Cancel"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="cancelAction:" destination="-1" eventType="touchUpInside" id="jId-Rk-jRJ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Pz-J3-J8w" customClass="GSBaseButton" customModule="PickZyShoppingApp" customModuleProvider="target">
+                                    <rect key="frame" x="182.5" y="0.0" width="132.5" height="30"/>
+                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="Done"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="doneAction:" destination="-1" eventType="touchUpInside" id="0u2-9V-iKE"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="ju9-ez-cj9">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="35"/>
+                                </constraint>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="43a-zL-NS5" firstAttribute="leading" secondItem="Dy2-fX-QJF" secondAttribute="leading" constant="30" id="RBR-Ha-RtT"/>
+                        <constraint firstItem="a9a-gN-Bxn" firstAttribute="top" secondItem="43a-zL-NS5" secondAttribute="bottom" constant="10" id="a9V-Ab-omV"/>
+                        <constraint firstAttribute="trailing" secondItem="43a-zL-NS5" secondAttribute="trailing" constant="30" id="eXj-Uj-AqI"/>
+                        <constraint firstAttribute="trailing" secondItem="a9a-gN-Bxn" secondAttribute="trailing" id="jhJ-5o-gv5"/>
+                        <constraint firstItem="43a-zL-NS5" firstAttribute="top" secondItem="Dy2-fX-QJF" secondAttribute="top" constant="10" id="mpy-21-sli"/>
+                        <constraint firstAttribute="bottom" secondItem="a9a-gN-Bxn" secondAttribute="bottom" constant="20" id="nIJ-Ix-lGM"/>
+                        <constraint firstAttribute="height" constant="200" id="nmS-2e-R2E">
+                            <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                        </constraint>
+                        <constraint firstItem="a9a-gN-Bxn" firstAttribute="leading" secondItem="Dy2-fX-QJF" secondAttribute="leading" id="w6S-ee-ktf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Dy2-fX-QJF" secondAttribute="bottom" id="PUL-8d-tRj"/>
+                <constraint firstItem="Dy2-fX-QJF" firstAttribute="leading" secondItem="dmO-vh-9nC" secondAttribute="leading" id="Wmg-fN-2IJ"/>
+                <constraint firstAttribute="trailing" secondItem="Dy2-fX-QJF" secondAttribute="trailing" id="lrD-WX-BOh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="obs-HT-fWg"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="transparency">
+                    <real key="value" value="0.20000000000000001"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

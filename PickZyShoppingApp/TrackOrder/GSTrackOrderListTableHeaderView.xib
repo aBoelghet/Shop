@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eg9-cI-UcA" customClass="GSTrackOrderListTableHeaderView" customModule="Shopor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wwY-QW-hHv">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YY5-4E-pe2">
+                            <rect key="frame" x="0.0" y="1" width="375" height="99"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVn-Yb-Rly" customClass="GSBaseLabel" customModule="Shopor" customModuleProvider="target">
+                                    <rect key="frame" x="10" y="0.0" width="320" height="99"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                    <nil key="highlightedColor"/>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    </variation>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Down_Arrow_blue" translatesAutoresizingMaskIntoConstraints="NO" id="2Nr-KC-bIi">
+                                    <rect key="frame" x="340" y="0.0" width="20" height="99"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="rqs-lE-QrO"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRy-uJ-9pO">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="iRy-uJ-9pO" secondAttribute="bottom" id="5J0-Gl-Hon"/>
+                                <constraint firstAttribute="trailing" secondItem="2Nr-KC-bIi" secondAttribute="trailing" constant="15" id="8Zq-vl-mif"/>
+                                <constraint firstItem="LVn-Yb-Rly" firstAttribute="top" secondItem="YY5-4E-pe2" secondAttribute="top" id="FDz-Vg-cBd"/>
+                                <constraint firstAttribute="bottom" secondItem="LVn-Yb-Rly" secondAttribute="bottom" id="HPp-mh-ped"/>
+                                <constraint firstItem="2Nr-KC-bIi" firstAttribute="top" secondItem="YY5-4E-pe2" secondAttribute="top" id="Mun-J8-uKc"/>
+                                <constraint firstItem="2Nr-KC-bIi" firstAttribute="leading" secondItem="LVn-Yb-Rly" secondAttribute="trailing" constant="10" id="RFe-FT-6aD"/>
+                                <constraint firstAttribute="trailing" secondItem="iRy-uJ-9pO" secondAttribute="trailing" id="djf-yi-Br3"/>
+                                <constraint firstAttribute="bottom" secondItem="2Nr-KC-bIi" secondAttribute="bottom" id="e7W-9h-Ofe"/>
+                                <constraint firstItem="iRy-uJ-9pO" firstAttribute="top" secondItem="YY5-4E-pe2" secondAttribute="top" id="foE-IF-CXl"/>
+                                <constraint firstItem="iRy-uJ-9pO" firstAttribute="leading" secondItem="YY5-4E-pe2" secondAttribute="leading" id="heD-p5-2wu"/>
+                                <constraint firstItem="LVn-Yb-Rly" firstAttribute="leading" secondItem="YY5-4E-pe2" secondAttribute="leading" constant="10" id="uqq-XX-ZXU"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="YY5-4E-pe2" secondAttribute="trailing" id="0k0-b1-FYJ"/>
+                        <constraint firstItem="YY5-4E-pe2" firstAttribute="leading" secondItem="wwY-QW-hHv" secondAttribute="leading" id="Mag-OH-D5B"/>
+                        <constraint firstAttribute="bottom" secondItem="YY5-4E-pe2" secondAttribute="bottom" id="Yg4-0E-qqf"/>
+                        <constraint firstItem="YY5-4E-pe2" firstAttribute="top" secondItem="wwY-QW-hHv" secondAttribute="top" constant="1" id="x5c-fi-wwO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="wwY-QW-hHv" firstAttribute="leading" secondItem="U5w-DX-Nc2" secondAttribute="leading" id="Ibt-m0-QXQ"/>
+                <constraint firstItem="U5w-DX-Nc2" firstAttribute="trailing" secondItem="wwY-QW-hHv" secondAttribute="trailing" id="UfH-Eh-Itg"/>
+                <constraint firstItem="wwY-QW-hHv" firstAttribute="top" secondItem="eg9-cI-UcA" secondAttribute="top" id="tL2-jv-f6L"/>
+                <constraint firstAttribute="bottom" secondItem="wwY-QW-hHv" secondAttribute="bottom" id="zHk-CY-7eL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="U5w-DX-Nc2"/>
+            <connections>
+                <outlet property="accessoryIndicator_imgView" destination="2Nr-KC-bIi" id="zP4-2t-h5h"/>
+                <outlet property="bgContent_view" destination="wwY-QW-hHv" id="Ehj-UU-fbh"/>
+                <outlet property="bg_headerView" destination="YY5-4E-pe2" id="us2-qY-4ZW"/>
+                <outlet property="sel_btn" destination="iRy-uJ-9pO" id="Tq1-Cd-N7B"/>
+                <outlet property="titleLabel" destination="LVn-Yb-Rly" id="jYB-Cd-aMi"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="63"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Down_Arrow_blue" width="25" height="25"/>
+    </resources>
+</document>

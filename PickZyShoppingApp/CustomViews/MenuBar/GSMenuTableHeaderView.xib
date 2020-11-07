@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GSMenuTableHeaderView" customModule="Shopor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="461" height="149"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UFq-Ab-lq8">
+                    <rect key="frame" x="0.0" y="0.0" width="461" height="149"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ot3-pO-sfR">
+                            <rect key="frame" x="20" y="5" width="139" height="139"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Ot3-pO-sfR" secondAttribute="height" multiplier="1:1" id="7g1-Um-wFI"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcB-pS-fiK" customClass="GSBaseLabel" customModule="Shopor" customModuleProvider="target">
+                            <rect key="frame" x="173.5" y="5" width="277.5" height="139"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3G-Bd-S7T">
+                            <rect key="frame" x="0.0" y="0.0" width="461" height="149"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="rcB-pS-fiK" firstAttribute="leading" secondItem="Ot3-pO-sfR" secondAttribute="trailing" constant="15" id="01K-VR-xYc"/>
+                        <constraint firstItem="rcB-pS-fiK" firstAttribute="top" secondItem="UFq-Ab-lq8" secondAttribute="top" constant="5" id="31s-ur-VrT"/>
+                        <constraint firstItem="Ot3-pO-sfR" firstAttribute="top" secondItem="UFq-Ab-lq8" secondAttribute="top" constant="5" id="66L-wh-cvk"/>
+                        <constraint firstItem="Ot3-pO-sfR" firstAttribute="leading" secondItem="UFq-Ab-lq8" secondAttribute="leading" constant="20" id="AmW-88-hXo"/>
+                        <constraint firstAttribute="bottom" secondItem="M3G-Bd-S7T" secondAttribute="bottom" id="YQ1-Ak-XYV"/>
+                        <constraint firstAttribute="trailing" secondItem="M3G-Bd-S7T" secondAttribute="trailing" id="Z4f-Xn-RYW"/>
+                        <constraint firstItem="M3G-Bd-S7T" firstAttribute="top" secondItem="UFq-Ab-lq8" secondAttribute="top" id="Z6c-GL-6lJ"/>
+                        <constraint firstItem="M3G-Bd-S7T" firstAttribute="leading" secondItem="UFq-Ab-lq8" secondAttribute="leading" id="cJQ-4S-jCE"/>
+                        <constraint firstAttribute="bottom" secondItem="Ot3-pO-sfR" secondAttribute="bottom" constant="5" id="lOy-bU-6gh"/>
+                        <constraint firstAttribute="trailing" secondItem="rcB-pS-fiK" secondAttribute="trailing" constant="10" id="uG0-cZ-iDJ"/>
+                        <constraint firstAttribute="bottom" secondItem="rcB-pS-fiK" secondAttribute="bottom" constant="5" id="y87-Z3-YBA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="UFq-Ab-lq8" secondAttribute="bottom" id="7No-Jl-ZJV"/>
+                <constraint firstAttribute="trailing" secondItem="UFq-Ab-lq8" secondAttribute="trailing" id="Buc-NA-CYm"/>
+                <constraint firstItem="UFq-Ab-lq8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Zbb-lH-y04"/>
+                <constraint firstItem="UFq-Ab-lq8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dKA-Ft-3z3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bg_view" destination="UFq-Ab-lq8" id="T1q-Wb-fv9"/>
+                <outlet property="profileImage" destination="Ot3-pO-sfR" id="C0F-gh-Cgy"/>
+                <outlet property="profileName" destination="rcB-pS-fiK" id="ian-Pd-jRc"/>
+                <outlet property="signupLogin_btn" destination="M3G-Bd-S7T" id="aWG-UE-7M2"/>
+            </connections>
+            <point key="canvasLocation" x="76.5" y="-205.5"/>
+        </view>
+    </objects>
+</document>

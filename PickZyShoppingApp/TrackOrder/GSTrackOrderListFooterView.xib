@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GSTrackOrderListFooterView" customModule="Shopor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="398" height="125"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Cdd-BM-L33">
+                    <rect key="frame" x="10" y="10" width="378" height="105"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOs-qC-him" customClass="GSBaseButton" customModule="Shopor" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="184" height="105"/>
+                            <state key="normal" title="Cancel Order"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7D-ih-Qjh" customClass="GSBaseButton" customModule="Shopor" customModuleProvider="target">
+                            <rect key="frame" x="194" y="0.0" width="184" height="105"/>
+                            <state key="normal" title="Help"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Cdd-BM-L33" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="JTP-TV-YZ3"/>
+                <constraint firstAttribute="bottom" secondItem="Cdd-BM-L33" secondAttribute="bottom" constant="10" id="MJT-5g-vHd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Cdd-BM-L33" secondAttribute="trailing" constant="10" id="QaY-sv-SVV"/>
+                <constraint firstItem="Cdd-BM-L33" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="dHk-wO-Nvb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="cancel_btn" destination="aOs-qC-him" id="MjS-61-xHJ"/>
+                <outlet property="help_btn" destination="z7D-ih-Qjh" id="utc-zF-pRC"/>
+            </connections>
+            <point key="canvasLocation" x="45" y="-217.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationBarWithCart" customModule="Shopor" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomLine_view" destination="jk2-kZ-AF4" id="KSO-Mr-0B6"/>
+                <outlet property="cartIconView" destination="RjU-nA-EKv" id="Itb-0R-iFL"/>
+                <outlet property="leftBarBtn" destination="1ZV-ho-xIY" id="4je-as-Bom"/>
+                <outlet property="rightBarBtn" destination="gB8-PK-Uvh" id="4df-O3-Ns1"/>
+                <outlet property="titleLable" destination="KR3-CM-oTR" id="nqi-lH-Wep"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Hyj-X0-TqJ">
+            <rect key="frame" x="0.0" y="0.0" width="479" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jk2-kZ-AF4">
+                    <rect key="frame" x="0.0" y="54" width="479" height="1"/>
+                    <color key="backgroundColor" red="0.82745098039999998" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="koK-3a-3tn"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CloseIcon" translatesAutoresizingMaskIntoConstraints="NO" id="gX2-qU-BIP">
+                    <rect key="frame" x="12" y="14" width="27.5" height="27.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="gX2-qU-BIP" secondAttribute="height" multiplier="1:1" id="f5c-eD-Gfx"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ZV-ho-xIY">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="ysN-1E-Slz">
+                            <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                        </constraint>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <connections>
+                        <action selector="leftBarBtnAction:" destination="-1" eventType="touchUpInside" id="9Ux-Xh-uyH"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RjU-nA-EKv" customClass="GSCartIconView" customModule="Shopor" customModuleProvider="target">
+                    <rect key="frame" x="429" y="-0.5" width="50" height="55"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gB8-PK-Uvh">
+                    <rect key="frame" x="429" y="0.0" width="50" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="BO3-Cw-v7T">
+                            <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                        </constraint>
+                    </constraints>
+                    <connections>
+                        <action selector="rightBarBtnAction:" destination="-1" eventType="touchUpInside" id="iiK-Ac-WEV"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KR3-CM-oTR" customClass="GSBaseLabel" customModule="Shopor" customModuleProvider="target">
+                    <rect key="frame" x="218.5" y="18" width="43.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="RjU-nA-EKv" firstAttribute="centerY" secondItem="gB8-PK-Uvh" secondAttribute="centerY" id="35w-qV-G7J"/>
+                <constraint firstAttribute="bottom" secondItem="1ZV-ho-xIY" secondAttribute="bottom" id="45t-wB-xyq"/>
+                <constraint firstItem="1ZV-ho-xIY" firstAttribute="leading" secondItem="Hyj-X0-TqJ" secondAttribute="leading" id="CKP-4a-FBT"/>
+                <constraint firstAttribute="bottom" secondItem="gB8-PK-Uvh" secondAttribute="bottom" id="CWs-6g-MGb"/>
+                <constraint firstItem="RjU-nA-EKv" firstAttribute="width" secondItem="gB8-PK-Uvh" secondAttribute="width" id="D3Z-Xq-mBi"/>
+                <constraint firstItem="gB8-PK-Uvh" firstAttribute="top" secondItem="Hyj-X0-TqJ" secondAttribute="top" id="E3f-mD-2Qe"/>
+                <constraint firstItem="gX2-qU-BIP" firstAttribute="width" secondItem="1ZV-ho-xIY" secondAttribute="height" multiplier="25:50" id="God-Ty-GQz"/>
+                <constraint firstItem="KR3-CM-oTR" firstAttribute="centerY" secondItem="Hyj-X0-TqJ" secondAttribute="centerY" id="NNo-7N-EPh"/>
+                <constraint firstAttribute="trailing" secondItem="jk2-kZ-AF4" secondAttribute="trailing" id="PBe-Zh-SVS"/>
+                <constraint firstItem="RjU-nA-EKv" firstAttribute="height" secondItem="gB8-PK-Uvh" secondAttribute="height" id="PgQ-Wx-b3n"/>
+                <constraint firstItem="gX2-qU-BIP" firstAttribute="centerX" secondItem="1ZV-ho-xIY" secondAttribute="centerX" id="PrM-hl-t9L"/>
+                <constraint firstItem="RjU-nA-EKv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KR3-CM-oTR" secondAttribute="trailing" constant="10" id="TRp-ZC-kpo"/>
+                <constraint firstAttribute="trailing" secondItem="gB8-PK-Uvh" secondAttribute="trailing" id="Tl4-5w-4IF"/>
+                <constraint firstItem="jk2-kZ-AF4" firstAttribute="leading" secondItem="Hyj-X0-TqJ" secondAttribute="leading" id="aAn-Jx-Byl"/>
+                <constraint firstAttribute="bottom" secondItem="jk2-kZ-AF4" secondAttribute="bottom" id="d94-Wy-0Mx"/>
+                <constraint firstItem="KR3-CM-oTR" firstAttribute="centerX" secondItem="Hyj-X0-TqJ" secondAttribute="centerX" id="dzW-BQ-y91"/>
+                <constraint firstItem="gX2-qU-BIP" firstAttribute="centerY" secondItem="1ZV-ho-xIY" secondAttribute="centerY" id="jP0-mu-gH7"/>
+                <constraint firstItem="KR3-CM-oTR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1ZV-ho-xIY" secondAttribute="trailing" constant="10" id="pw3-ML-Bvg"/>
+                <constraint firstItem="RjU-nA-EKv" firstAttribute="centerX" secondItem="gB8-PK-Uvh" secondAttribute="centerX" id="u5n-nC-Gqh"/>
+                <constraint firstItem="1ZV-ho-xIY" firstAttribute="top" secondItem="Hyj-X0-TqJ" secondAttribute="top" id="zox-9c-33J"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="95.5" y="77.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CloseIcon" width="24" height="24"/>
+    </resources>
+</document>

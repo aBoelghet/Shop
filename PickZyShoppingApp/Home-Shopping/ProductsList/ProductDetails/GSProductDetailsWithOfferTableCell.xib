@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="113" id="s4d-tk-EhO" customClass="GSProductDetailsWithOfferTableCell" customModule="Shopor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s4d-tk-EhO" id="1YQ-Eo-nO5">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="112.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="reI-l8-thj">
+                        <rect key="frame" x="15" y="5" width="231" height="102.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yeo-Xa-Y40">
+                                <rect key="frame" x="0.0" y="0.0" width="231" height="22"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seller Name:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWz-Gr-GYR" customClass="GSBaseLabel" customModule="Shopor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="lvF-wY-oxX">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="135"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWC-jm-XPD" customClass="GSBaseLabel" customModule="Shopor" customModuleProvider="target">
+                                        <rect key="frame" x="85" y="0.0" width="146" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dyl-m8-EEs">
+                                <rect key="frame" x="0.0" y="27" width="231" height="22"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C6W-eJ-Y0B" customClass="GSBaseLabel" customModule="Shopor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        </variation>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Qn4-V4-oj3">
+                                        <rect key="frame" x="85" y="0.0" width="146" height="22"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M2Z-15-vEF">
+                                                <rect key="frame" x="0.0" y="0.0" width="73" height="22"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bB-kt-fFp" customClass="GSBaseLabel" customModule="Shopor" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="-0.5" width="28.5" height="22"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        </variation>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgx-Ja-c37">
+                                                        <rect key="frame" x="0.0" y="10" width="28.5" height="1"/>
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="wg9-0b-AUp"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="8bB-kt-fFp" firstAttribute="top" secondItem="M2Z-15-vEF" secondAttribute="top" id="3sa-Dc-C46"/>
+                                                    <constraint firstItem="8bB-kt-fFp" firstAttribute="leading" secondItem="M2Z-15-vEF" secondAttribute="leading" id="4gi-Fz-ows"/>
+                                                    <constraint firstItem="fgx-Ja-c37" firstAttribute="leading" secondItem="8bB-kt-fFp" secondAttribute="leading" id="6s3-Re-Z3s"/>
+                                                    <constraint firstItem="fgx-Ja-c37" firstAttribute="trailing" secondItem="8bB-kt-fFp" secondAttribute="trailing" id="T3U-4X-bIU"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8bB-kt-fFp" secondAttribute="trailing" id="XLL-Iu-Nni"/>
+                                                    <constraint firstItem="fgx-Ja-c37" firstAttribute="centerY" secondItem="8bB-kt-fFp" secondAttribute="centerY" id="eMB-kY-Lom"/>
+                                                    <constraint firstAttribute="bottom" secondItem="8bB-kt-fFp" secondAttribute="bottom" id="xxr-cs-7dh"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1Y-5V-OZx" customClass="GSBaseLabel" customModule="Shopor" customModuleProvider="target">
+                                                <rect key="frame" x="73" y="0.0" width="73" height="22"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="JV1-Wr-YRu">
+                                <rect key="frame" x="0.0" y="54" width="231" height="21.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qty:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZT-V3-aod" customClass="GSBaseLabel" customModule="Shopor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNO-0r-ENh" customClass="GSBaseLabel" customModule="Shopor" customModuleProvider="target">
+                                        <rect key="frame" x="85" y="0.0" width="146" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nQM-LF-Pqn">
+                                <rect key="frame" x="0.0" y="80.5" width="231" height="22"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offer:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="er6-53-iqo" customClass="GSBaseLabel" customModule="Shopor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        </variation>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PJw-Yp-7Sq">
+                                        <rect key="frame" x="85" y="0.0" width="146" height="22"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XUg-Ja-mwB" customClass="GSCornerEdgeView" customModule="Shopor" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="4.5" width="35.5" height="13.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1B-HT-ZtX" customClass="GSBaseLabel" customModule="Shopor" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="0.0" width="16" height="13.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="U1B-HT-ZtX" secondAttribute="bottom" id="AS9-5M-68v"/>
+                                                    <constraint firstAttribute="trailing" secondItem="U1B-HT-ZtX" secondAttribute="trailing" constant="10" id="KO9-cS-JN3"/>
+                                                    <constraint firstItem="U1B-HT-ZtX" firstAttribute="leading" secondItem="XUg-Ja-mwB" secondAttribute="leading" constant="10" id="OFd-s9-Apr"/>
+                                                    <constraint firstItem="U1B-HT-ZtX" firstAttribute="top" secondItem="XUg-Ja-mwB" secondAttribute="top" id="Y0v-Qb-RND"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="XUg-Ja-mwB" firstAttribute="centerY" secondItem="PJw-Yp-7Sq" secondAttribute="centerY" id="7i9-Ui-AHI"/>
+                                            <constraint firstItem="XUg-Ja-mwB" firstAttribute="leading" secondItem="PJw-Yp-7Sq" secondAttribute="leading" id="Hzd-nS-1hp"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XUg-Ja-mwB" secondAttribute="trailing" id="TGs-aS-e8A"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="XUg-Ja-mwB" secondAttribute="bottom" id="V3s-kh-ePf"/>
+                                            <constraint firstItem="XUg-Ja-mwB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="PJw-Yp-7Sq" secondAttribute="top" id="g8o-zh-PVe"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="C6W-eJ-Y0B" firstAttribute="width" secondItem="vWz-Gr-GYR" secondAttribute="width" id="bdO-hz-JF0"/>
+                            <constraint firstItem="er6-53-iqo" firstAttribute="width" secondItem="MZT-V3-aod" secondAttribute="width" id="eQ6-E8-SmJ"/>
+                            <constraint firstItem="MZT-V3-aod" firstAttribute="width" secondItem="C6W-eJ-Y0B" secondAttribute="width" id="zjq-Ow-zKf"/>
+                        </constraints>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldv-Ou-kSR" customClass="GSBaseLabel" customModule="Shopor" customModuleProvider="target">
+                        <rect key="frame" x="256" y="5" width="94" height="102.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ldv-Ou-kSR" secondAttribute="trailing" constant="5" id="37T-Yw-JEd"/>
+                    <constraint firstAttribute="bottom" secondItem="reI-l8-thj" secondAttribute="bottom" constant="5" id="3gD-KC-Z6a"/>
+                    <constraint firstItem="ldv-Ou-kSR" firstAttribute="leading" secondItem="reI-l8-thj" secondAttribute="trailing" constant="10" id="B4l-Q0-8qc"/>
+                    <constraint firstItem="reI-l8-thj" firstAttribute="leading" secondItem="1YQ-Eo-nO5" secondAttribute="leading" constant="15" id="L1w-bI-YLc"/>
+                    <constraint firstAttribute="bottom" secondItem="ldv-Ou-kSR" secondAttribute="bottom" constant="5" id="UhJ-RO-dzh"/>
+                    <constraint firstItem="reI-l8-thj" firstAttribute="top" secondItem="1YQ-Eo-nO5" secondAttribute="top" constant="5" id="YJ4-V6-59l"/>
+                    <constraint firstItem="reI-l8-thj" firstAttribute="width" secondItem="1YQ-Eo-nO5" secondAttribute="width" multiplier="0.65" id="azK-yb-SWZ"/>
+                    <constraint firstItem="ldv-Ou-kSR" firstAttribute="top" secondItem="1YQ-Eo-nO5" secondAttribute="top" constant="5" id="z77-rn-sf6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="dNQ-Fe-aDA"/>
+            <connections>
+                <outlet property="offerBG_view" destination="XUg-Ja-mwB" id="8NM-iM-O3X"/>
+                <outlet property="offer_lbl" destination="U1B-HT-ZtX" id="rTr-We-8T5"/>
+                <outlet property="offer_stackView" destination="nQM-LF-Pqn" id="4b9-02-FZj"/>
+                <outlet property="originalPriceStrikedLblBG_view" destination="M2Z-15-vEF" id="vTL-Z7-4Ue"/>
+                <outlet property="originalPriceStriked_lbl" destination="8bB-kt-fFp" id="lCO-Pj-JfE"/>
+                <outlet property="priceWithOfferFinal_lbl" destination="ldv-Ou-kSR" id="FWo-qj-1Rz"/>
+                <outlet property="priceWithOffer_lbl" destination="X1Y-5V-OZx" id="fXX-FQ-Wad"/>
+                <outlet property="quantity_lbl" destination="SNO-0r-ENh" id="OPL-Em-4go"/>
+                <outlet property="sellerName_lbl" destination="rWC-jm-XPD" id="rKB-dj-pKu"/>
+            </connections>
+            <point key="canvasLocation" x="51.5" y="88.5"/>
+        </tableViewCell>
+    </objects>
+</document>

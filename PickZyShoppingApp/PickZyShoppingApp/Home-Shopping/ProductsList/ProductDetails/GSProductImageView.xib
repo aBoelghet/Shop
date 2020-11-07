@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GSProductImageView" customModule="Shopor" customModuleProvider="target">
+            <connections>
+                <outlet property="bg_bottomConstraint" destination="tae-qf-AYB" id="zRW-lF-IZR"/>
+                <outlet property="bg_topConstraint" destination="sdF-dj-JQn" id="D09-8A-imG"/>
+                <outlet property="imageCollection" destination="6Ha-3z-Gjj" id="1h4-tK-Z4r"/>
+                <outlet property="pageControl" destination="3rI-xG-i8F" id="hbl-KI-1rO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fMW-fw-w6D">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rFA-W9-4MH" userLabel="bg_view" customClass="GSTransparentView" customModule="Shopor" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="6Ha-3z-Gjj">
+                            <rect key="frame" x="0.0" y="45" width="375" height="592"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="RvQ-c3-25L" customClass="FullImageCollectionLayout" customModule="Shopor" customModuleProvider="target">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3rI-xG-i8F" customClass="DAPageControlView">
+                            <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="bxe-J7-uD6"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ii6-1S-7og" customClass="GSBaseButton" customModule="Shopor" customModuleProvider="target">
+                            <rect key="frame" x="5" y="0.0" width="50" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="Kyt-IX-BZS">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="55"/>
+                                </constraint>
+                                <constraint firstAttribute="width" constant="50" id="o7k-E5-wL9">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                </constraint>
+                            </constraints>
+                            <state key="normal" image="CloseWhiteIcon">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="closeFullImageView:" destination="-1" eventType="touchUpInside" id="cTB-Nc-P7S"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="6Ha-3z-Gjj" firstAttribute="top" secondItem="Ii6-1S-7og" secondAttribute="bottom" id="7Hj-gr-tPw"/>
+                        <constraint firstAttribute="trailing" secondItem="3rI-xG-i8F" secondAttribute="trailing" id="ANT-lP-QLa"/>
+                        <constraint firstItem="Ii6-1S-7og" firstAttribute="leading" secondItem="rFA-W9-4MH" secondAttribute="leading" constant="5" id="NFc-sR-OOA"/>
+                        <constraint firstItem="3rI-xG-i8F" firstAttribute="top" secondItem="6Ha-3z-Gjj" secondAttribute="bottom" id="Q8A-Fy-CeB"/>
+                        <constraint firstAttribute="bottom" secondItem="3rI-xG-i8F" secondAttribute="bottom" id="ZYj-aD-fjc"/>
+                        <constraint firstItem="Ii6-1S-7og" firstAttribute="top" secondItem="rFA-W9-4MH" secondAttribute="top" id="aZr-G4-6HT"/>
+                        <constraint firstAttribute="trailing" secondItem="6Ha-3z-Gjj" secondAttribute="trailing" id="cra-4z-EK0"/>
+                        <constraint firstItem="6Ha-3z-Gjj" firstAttribute="leading" secondItem="rFA-W9-4MH" secondAttribute="leading" id="eYa-DX-4Ox"/>
+                        <constraint firstItem="3rI-xG-i8F" firstAttribute="leading" secondItem="rFA-W9-4MH" secondAttribute="leading" id="mNK-rZ-OQe"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="transparency">
+                            <real key="value" value="0.40000000000000002"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rFA-W9-4MH" secondAttribute="trailing" id="HXb-0E-Ihl"/>
+                <constraint firstItem="rFA-W9-4MH" firstAttribute="leading" secondItem="fMW-fw-w6D" secondAttribute="leading" id="OHi-eD-Sgz"/>
+                <constraint firstItem="rFA-W9-4MH" firstAttribute="top" secondItem="fMW-fw-w6D" secondAttribute="top" id="sdF-dj-JQn"/>
+                <constraint firstAttribute="bottom" secondItem="rFA-W9-4MH" secondAttribute="bottom" id="tae-qf-AYB"/>
+            </constraints>
+            <point key="canvasLocation" x="32.799999999999997" y="52.623688155922046"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CloseWhiteIcon" width="20" height="20"/>
+    </resources>
+</document>

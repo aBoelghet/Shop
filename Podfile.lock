@@ -1,0 +1,101 @@
+PODS:
+  - Alamofire (5.2.2)
+  - AlamofireImage (4.1.0):
+    - Alamofire (~> 5.1)
+  - Crashlytics (3.14.0):
+    - Fabric (~> 1.10.2)
+  - CryptoSwift (1.3.2)
+  - Fabric (1.10.2)
+  - GLScratchCard (0.1.0)
+  - GoogleMaps (3.1.0):
+    - GoogleMaps/Maps (= 3.1.0)
+  - GoogleMaps/Base (3.1.0)
+  - GoogleMaps/Maps (3.1.0):
+    - GoogleMaps/Base
+  - GooglePlacePicker (3.1.0):
+    - GoogleMaps (= 3.1.0)
+    - GooglePlaces (= 3.1.0)
+  - GooglePlaces (3.1.0):
+    - GoogleMaps/Base (= 3.1.0)
+  - IQKeyboardManagerSwift (6.5.6)
+  - MBProgressHUD (1.2.0)
+  - MKToolTip (1.0.6)
+  - PayUBiz-coreSDK-Swift (2.3.0.1)
+  - QBImagePickerController (3.4.0)
+  - razorpay-pod (1.1.7)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SDWebImage (5.9.3):
+    - SDWebImage/Core (= 5.9.3)
+  - SDWebImage/Core (5.9.3)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - AlamofireImage (~> 4.1)
+  - Crashlytics
+  - CryptoSwift
+  - Fabric
+  - GLScratchCard
+  - GoogleMaps
+  - GooglePlacePicker
+  - GooglePlaces
+  - IQKeyboardManagerSwift
+  - MBProgressHUD
+  - MKToolTip
+  - PayUBiz-coreSDK-Swift
+  - QBImagePickerController
+  - razorpay-pod
+  - RxCocoa
+  - RxSwift
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - Crashlytics
+    - CryptoSwift
+    - Fabric
+    - GLScratchCard
+    - GoogleMaps
+    - GooglePlacePicker
+    - GooglePlaces
+    - IQKeyboardManagerSwift
+    - MBProgressHUD
+    - MKToolTip
+    - PayUBiz-coreSDK-Swift
+    - QBImagePickerController
+    - razorpay-pod
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
+  Crashlytics: 9220f5bc89e7a618df411b4f639389dbfb0e03d2
+  CryptoSwift: 093499be1a94b0cae36e6c26b70870668cb56060
+  Fabric: ea977e3cd9c20425516d3dafd3bf8c941c51223f
+  GLScratchCard: 831ed1db01ef200c4617d816217571a99645962f
+  GoogleMaps: 5c13302e6fe6bb6e686b267196586b91cd594225
+  GooglePlacePicker: fa975116ac202ac29822c0a79758ea1c4db5a95f
+  GooglePlaces: e874db179f2675c4f3eeda0b686b540273a578b0
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MKToolTip: 69509b1cada10f96bd9f4ab559a768e7c6557933
+  PayUBiz-coreSDK-Swift: e89d687c27218abbc2142be29e808cbfa62deb35
+  QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
+  razorpay-pod: 6ee0c8c7afad8eead9524d5eb516bc35ac1604ef
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SDWebImage: a31ee8e90a97303529e03fb0c333eae0eacb88e9
+
+PODFILE CHECKSUM: da6c5b3bbc944ffe2a8dc4553a71afe599df43b5
+
+COCOAPODS: 1.9.3

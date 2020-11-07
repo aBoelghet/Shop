@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="GSCategoryMenuTableCell" customModule="Shopor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pCv-yA-uAg">
+                        <rect key="frame" x="0.0" y="3" width="320" height="37.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopInCategoryMenu_icon" translatesAutoresizingMaskIntoConstraints="NO" id="qjZ-zs-Yd2">
+                                <rect key="frame" x="10" y="11.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qjZ-zs-Yd2" secondAttribute="height" id="1ER-V3-RVn"/>
+                                    <constraint firstAttribute="width" constant="15" id="T1x-kh-vHU"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="categoryRightArrow_icon" translatesAutoresizingMaskIntoConstraints="NO" id="qkO-Ce-hok">
+                                <rect key="frame" x="290" y="9" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="5sd-RC-6eW"/>
+                                    <constraint firstAttribute="width" secondItem="qkO-Ce-hok" secondAttribute="height" id="HTr-tK-dSH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Urk-BR-vWK" customClass="GSBaseLabel" customModule="Shopor" customModuleProvider="target">
+                                <rect key="frame" x="35" y="5" width="245" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUY-C6-0iF">
+                                <rect key="frame" x="280" y="0.0" width="40" height="37.5"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mUY-C6-0iF" firstAttribute="top" secondItem="pCv-yA-uAg" secondAttribute="top" id="10B-jv-hqB"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qkO-Ce-hok" secondAttribute="bottom" constant="5" id="4aq-5i-4ly"/>
+                            <constraint firstItem="qkO-Ce-hok" firstAttribute="top" relation="greaterThanOrEqual" secondItem="pCv-yA-uAg" secondAttribute="top" constant="5" id="78f-Yh-qgk"/>
+                            <constraint firstAttribute="bottom" secondItem="Urk-BR-vWK" secondAttribute="bottom" constant="5" id="9WZ-50-uTE"/>
+                            <constraint firstItem="Urk-BR-vWK" firstAttribute="top" secondItem="pCv-yA-uAg" secondAttribute="top" constant="5" id="FCI-6u-XEs"/>
+                            <constraint firstAttribute="trailing" secondItem="qkO-Ce-hok" secondAttribute="trailing" constant="10" id="HGf-kg-Pu2"/>
+                            <constraint firstItem="qjZ-zs-Yd2" firstAttribute="centerY" secondItem="pCv-yA-uAg" secondAttribute="centerY" id="LF5-rU-KCi"/>
+                            <constraint firstItem="qkO-Ce-hok" firstAttribute="centerY" secondItem="pCv-yA-uAg" secondAttribute="centerY" id="XH0-gk-IJj"/>
+                            <constraint firstItem="Urk-BR-vWK" firstAttribute="leading" secondItem="qjZ-zs-Yd2" secondAttribute="trailing" constant="10" id="d7f-oR-Rph"/>
+                            <constraint firstItem="qkO-Ce-hok" firstAttribute="leading" secondItem="Urk-BR-vWK" secondAttribute="trailing" constant="10" id="qnM-b6-ggD"/>
+                            <constraint firstItem="qjZ-zs-Yd2" firstAttribute="leading" secondItem="pCv-yA-uAg" secondAttribute="leading" constant="10" id="rWm-IR-MO1"/>
+                            <constraint firstAttribute="bottom" secondItem="mUY-C6-0iF" secondAttribute="bottom" id="stB-LM-g7S"/>
+                            <constraint firstItem="mUY-C6-0iF" firstAttribute="leading" secondItem="Urk-BR-vWK" secondAttribute="trailing" id="wdA-mL-jyn"/>
+                            <constraint firstAttribute="trailing" secondItem="mUY-C6-0iF" secondAttribute="trailing" id="xMr-s0-0DY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="pCv-yA-uAg" secondAttribute="bottom" constant="3" id="Ecn-vS-AfY"/>
+                    <constraint firstItem="pCv-yA-uAg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="FFF-z7-HQq"/>
+                    <constraint firstItem="pCv-yA-uAg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="cQC-7p-4Nv"/>
+                    <constraint firstAttribute="trailing" secondItem="pCv-yA-uAg" secondAttribute="trailing" id="k6L-od-yRu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="accessoryBtn_imgView" destination="qkO-Ce-hok" id="QEK-I1-qEb"/>
+                <outlet property="accessory_btn" destination="mUY-C6-0iF" id="1ik-oR-Hu0"/>
+                <outlet property="categoryName_lbl" destination="Urk-BR-vWK" id="lgX-8d-1Uh"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="categoryRightArrow_icon" width="20" height="20"/>
+        <image name="shopInCategoryMenu_icon" width="20" height="20"/>
+    </resources>
+</document>

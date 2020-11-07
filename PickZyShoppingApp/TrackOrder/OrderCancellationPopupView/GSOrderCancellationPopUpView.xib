@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GSOrderCancellationPopUpView" customModule="Shopor" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelRefundPopup_view" destination="Hta-se-Mru" id="wo0-pg-jhk"/>
+                <outlet property="cancellationPopUp_tableView" destination="s8v-TV-7iI" id="Wk7-KA-zwC"/>
+                <outlet property="closeButton" destination="vpt-AG-gkR" id="Onh-Ym-pCQ"/>
+                <outlet property="header_lbl" destination="6LZ-0N-8D3" id="arz-to-Cmp"/>
+                <outlet property="main_scrollView" destination="Qv6-lD-bzH" id="Tnl-N3-MZa"/>
+                <outlet property="popupViewHeight_constraint" destination="8gk-zJ-Khf" id="QlO-o2-2rs"/>
+                <outlet property="popup_view" destination="TTh-Df-GH8" id="EXO-Bj-ww4"/>
+                <outlet property="refundToBank_btn" destination="Wbh-mG-1UI" id="8Jp-X1-CkJ"/>
+                <outlet property="refundToBayfay_btn" destination="IBk-W9-SAN" id="VEw-9u-07s"/>
+                <outlet property="top_constraint" destination="9hF-av-yP0" id="SCQ-0P-DWl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f5W-Xk-xcv">
+                    <rect key="frame" x="0.0" y="20" width="375" height="667"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qv6-lD-bzH">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cm6-6u-hoQ" userLabel="contentView">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpt-AG-gkR">
+                                            <rect key="frame" x="330" y="15" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="kFY-4M-yTv"/>
+                                                <constraint firstAttribute="height" constant="30" id="niQ-kN-QaV"/>
+                                            </constraints>
+                                            <state key="normal" image="CloseWhiteIcon"/>
+                                            <connections>
+                                                <action selector="closeButtonAction:" destination="-1" eventType="touchUpInside" id="NkP-EQ-iQr"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="vpt-AG-gkR" secondAttribute="trailing" constant="15" id="0NR-1C-F1R"/>
+                                        <constraint firstItem="vpt-AG-gkR" firstAttribute="top" secondItem="Cm6-6u-hoQ" secondAttribute="top" constant="15" id="VjE-eJ-oG7"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TTh-Df-GH8">
+                                    <rect key="frame" x="0.0" y="258.5" width="375" height="150"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6LZ-0N-8D3" customClass="GSBaseLabel" customModule="Shopor" customModuleProvider="target">
+                                            <rect key="frame" x="10" y="25" width="355" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            </variation>
+                                        </label>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="s8v-TV-7iI">
+                                            <rect key="frame" x="10" y="58" width="355" height="92"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="s8v-TV-7iI" firstAttribute="top" secondItem="6LZ-0N-8D3" secondAttribute="bottom" constant="15" id="8b6-gm-U58"/>
+                                        <constraint firstAttribute="height" constant="150" id="8gk-zJ-Khf"/>
+                                        <constraint firstAttribute="trailing" secondItem="6LZ-0N-8D3" secondAttribute="trailing" constant="10" id="9Zh-Af-17a"/>
+                                        <constraint firstAttribute="bottom" secondItem="s8v-TV-7iI" secondAttribute="bottom" id="Hmn-lY-ANv"/>
+                                        <constraint firstItem="s8v-TV-7iI" firstAttribute="leading" secondItem="TTh-Df-GH8" secondAttribute="leading" constant="10" id="Qfh-Bj-Nl9"/>
+                                        <constraint firstItem="6LZ-0N-8D3" firstAttribute="leading" secondItem="TTh-Df-GH8" secondAttribute="leading" constant="10" id="SY0-XF-1PM"/>
+                                        <constraint firstItem="6LZ-0N-8D3" firstAttribute="top" secondItem="TTh-Df-GH8" secondAttribute="top" constant="25" id="Sqd-xY-RXc"/>
+                                        <constraint firstAttribute="trailing" secondItem="s8v-TV-7iI" secondAttribute="trailing" constant="10" id="TAz-6M-EZk"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hta-se-Mru">
+                                    <rect key="frame" x="0.0" y="227.5" width="375" height="212"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MaL-NW-Jy9">
+                                            <rect key="frame" x="20" y="20" width="335" height="172"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click below button to credit immediately in your BayFay Cash Wallet and again you can order from different shop." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78X-V5-6U1" customClass="GSBaseLabel" customModule="Shopor" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="50.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    </variation>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBk-W9-SAN" customClass="GSBaseButton" customModule="Shopor" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="60.5" width="335" height="29"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <state key="normal" title="Refund to BayFay Cash">
+                                                        <color key="titleColor" red="0.3411764705882353" green="0.64313725490196072" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="0.3411764705882353" green="0.64313725490196072" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    </variation>
+                                                    <connections>
+                                                        <action selector="refundToBayfayCash:" destination="-1" eventType="touchUpInside" id="kMJ-E2-ecX"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank transfer may take 5 to 7 business days to get credited." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRi-KT-dlc" customClass="GSBaseLabel" customModule="Shopor" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="99.5" width="335" height="33.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    </variation>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbh-mG-1UI" customClass="GSBaseButton" customModule="Shopor" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="143" width="335" height="29"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <state key="normal" title="Refund to Bank Account">
+                                                        <color key="titleColor" red="1" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="1" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    </variation>
+                                                    <connections>
+                                                        <action selector="refundToBank:" destination="-1" eventType="touchUpInside" id="JRq-KW-HHa"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="MaL-NW-Jy9" firstAttribute="leading" secondItem="Hta-se-Mru" secondAttribute="leading" constant="20" id="0yY-F6-Sp6"/>
+                                        <constraint firstAttribute="bottom" secondItem="MaL-NW-Jy9" secondAttribute="bottom" constant="20" id="OIc-my-eZ2"/>
+                                        <constraint firstAttribute="trailing" secondItem="MaL-NW-Jy9" secondAttribute="trailing" constant="20" id="vGh-1c-dG4"/>
+                                        <constraint firstItem="MaL-NW-Jy9" firstAttribute="top" secondItem="Hta-se-Mru" secondAttribute="top" constant="20" id="w9R-Bn-tIA"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="TTh-Df-GH8" secondAttribute="trailing" id="4pa-z0-bNK"/>
+                                <constraint firstItem="Hta-se-Mru" firstAttribute="centerY" secondItem="Qv6-lD-bzH" secondAttribute="centerY" id="6Vf-M9-xtK"/>
+                                <constraint firstItem="Hta-se-Mru" firstAttribute="leading" secondItem="Qv6-lD-bzH" secondAttribute="leading" id="98c-bg-XOH"/>
+                                <constraint firstItem="Cm6-6u-hoQ" firstAttribute="top" secondItem="Qv6-lD-bzH" secondAttribute="top" id="J5l-m9-3yE"/>
+                                <constraint firstItem="Cm6-6u-hoQ" firstAttribute="leading" secondItem="Qv6-lD-bzH" secondAttribute="leading" id="NvG-ZQ-HJs"/>
+                                <constraint firstItem="TTh-Df-GH8" firstAttribute="leading" secondItem="Qv6-lD-bzH" secondAttribute="leading" id="PgC-8k-tzh"/>
+                                <constraint firstItem="TTh-Df-GH8" firstAttribute="centerY" secondItem="Qv6-lD-bzH" secondAttribute="centerY" id="WZe-du-kIR"/>
+                                <constraint firstAttribute="trailing" secondItem="Cm6-6u-hoQ" secondAttribute="trailing" id="Wa8-4A-K9k"/>
+                                <constraint firstItem="Cm6-6u-hoQ" firstAttribute="centerY" secondItem="Qv6-lD-bzH" secondAttribute="centerY" id="hg0-Jl-YOK"/>
+                                <constraint firstAttribute="bottom" secondItem="Cm6-6u-hoQ" secondAttribute="bottom" id="mD8-FT-7ui"/>
+                                <constraint firstAttribute="trailing" secondItem="Hta-se-Mru" secondAttribute="trailing" id="o5q-SU-DMw"/>
+                                <constraint firstItem="Cm6-6u-hoQ" firstAttribute="centerX" secondItem="Qv6-lD-bzH" secondAttribute="centerX" id="wbZ-cs-Hz6"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Qv6-lD-bzH" firstAttribute="top" secondItem="f5W-Xk-xcv" secondAttribute="top" id="9a8-Fx-Nws"/>
+                        <constraint firstItem="Qv6-lD-bzH" firstAttribute="leading" secondItem="f5W-Xk-xcv" secondAttribute="leading" id="YVH-Oq-Hcx"/>
+                        <constraint firstAttribute="trailing" secondItem="Qv6-lD-bzH" secondAttribute="trailing" id="aP6-HJ-kN3"/>
+                        <constraint firstAttribute="bottom" secondItem="Qv6-lD-bzH" secondAttribute="bottom" id="gpn-mP-PJx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="f5W-Xk-xcv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="9hF-av-yP0"/>
+                <constraint firstItem="f5W-Xk-xcv" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="BqD-cT-JSr"/>
+                <constraint firstItem="f5W-Xk-xcv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="F2y-t9-wDw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="f5W-Xk-xcv" secondAttribute="trailing" id="hZZ-nK-faS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CloseWhiteIcon" width="20" height="20"/>
+    </resources>
+</document>

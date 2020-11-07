@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>type</key>
+	<array/>
+	<key>Type1</key>
+	<string>Public Shops</string>
+	<key>Type2</key>
+	<string>Private Shops</string>
+	<key>Type3</key>
+	<string>Branded Shops within 5kms</string>
+</dict>
+</plist>

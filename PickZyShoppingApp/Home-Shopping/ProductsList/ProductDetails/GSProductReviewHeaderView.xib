@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GSProductReviewHeaderView" customModule="Shopor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="128"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXb-22-VeY" customClass="GSBaseLabel" customModule="Shopor" customModuleProvider="target">
+                    <rect key="frame" x="235" y="0.0" width="84" height="128"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    </variation>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tvv-Kc-UUJ" customClass="FloatRatingView" customModule="Shopor" customModuleProvider="target">
+                    <rect key="frame" x="135" y="57" width="90" height="15"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="KyS-QM-dZq">
+                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="90" id="w3B-Zc-P9F">
+                            <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                        </constraint>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="StarEmpty"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="StarFull"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="minRating">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="maxRating">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="editable" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customer Reviews:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lo9-XX-jky" customClass="GSBaseLabel" customModule="Shopor" customModuleProvider="target">
+                    <rect key="frame" x="10" y="0.0" width="120" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="tL0-TT-6H2">
+                            <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                        </constraint>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fXb-22-VeY" secondAttribute="trailing" constant="5" id="6RN-Je-5hD"/>
+                <constraint firstItem="Tvv-Kc-UUJ" firstAttribute="leading" secondItem="lo9-XX-jky" secondAttribute="trailing" constant="5" id="9Nr-9b-55h"/>
+                <constraint firstItem="Tvv-Kc-UUJ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="C7S-pE-Lg4"/>
+                <constraint firstItem="fXb-22-VeY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="L2V-Vq-bzd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="lo9-XX-jky" secondAttribute="bottom" id="QJq-hw-If1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="fXb-22-VeY" secondAttribute="bottom" id="Qyu-8P-Nda"/>
+                <constraint firstItem="lo9-XX-jky" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WaO-CA-RCj"/>
+                <constraint firstItem="fXb-22-VeY" firstAttribute="leading" secondItem="Tvv-Kc-UUJ" secondAttribute="trailing" constant="10" id="cKX-k5-u7H"/>
+                <constraint firstItem="lo9-XX-jky" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="eKo-Qx-dBC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="rating_view" destination="Tvv-Kc-UUJ" id="J05-UA-Y5O"/>
+                <outlet property="reviewCount_lbl" destination="fXb-22-VeY" id="Qp5-2I-Vjb"/>
+                <outlet property="reviewKey_lbl" destination="lo9-XX-jky" id="b3i-ZF-7jf"/>
+            </connections>
+            <point key="canvasLocation" x="4" y="63"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="StarEmpty" width="22" height="22"/>
+        <image name="StarFull" width="22" height="22"/>
+    </resources>
+</document>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GSCustomOrderTableHeaderView" customModule="Shopor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="489" height="57"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rzP-6p-qhe" userLabel="MainBG_view">
+                    <rect key="frame" x="0.0" y="0.0" width="489" height="57"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nwj-S4-JfV" userLabel="bg_view">
+                            <rect key="frame" x="0.0" y="0.0" width="489" height="57"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iKl-mc-Iz7">
+                                    <rect key="frame" x="15" y="0.0" width="399" height="57"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kM-pg-CW3" customClass="GSBaseLabel" customModule="Shopor" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="133" height="57"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            </variation>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Una-03-6Um" customClass="GSBaseLabel" customModule="Shopor" customModuleProvider="target">
+                                            <rect key="frame" x="133" y="0.0" width="133" height="57"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            </variation>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Wyi-LX-SDf" customClass="GSBaseLabel" customModule="Shopor" customModuleProvider="target">
+                                            <rect key="frame" x="266" y="0.0" width="133" height="57"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            </variation>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8Y-wk-4uk">
+                                    <rect key="frame" x="434" y="0.0" width="55" height="57"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="Rl2-rH-lnW"/>
+                                        <constraint firstAttribute="width" constant="55" id="VS2-gx-iNu"/>
+                                    </constraints>
+                                    <state key="normal" image="Radio_off"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEq-8x-kda">
+                                    <rect key="frame" x="0.0" y="0.0" width="489" height="57"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="c8Y-wk-4uk" secondAttribute="trailing" id="3xz-zl-YvB"/>
+                                <constraint firstAttribute="trailing" secondItem="PEq-8x-kda" secondAttribute="trailing" id="Baq-kj-33A"/>
+                                <constraint firstItem="c8Y-wk-4uk" firstAttribute="top" secondItem="Nwj-S4-JfV" secondAttribute="top" id="GuR-dO-uIO"/>
+                                <constraint firstAttribute="bottom" secondItem="c8Y-wk-4uk" secondAttribute="bottom" id="KZu-l8-bla"/>
+                                <constraint firstAttribute="bottom" secondItem="iKl-mc-Iz7" secondAttribute="bottom" id="UA6-wZ-lRt"/>
+                                <constraint firstItem="c8Y-wk-4uk" firstAttribute="leading" secondItem="iKl-mc-Iz7" secondAttribute="trailing" constant="20" id="fBn-LS-T88"/>
+                                <constraint firstItem="iKl-mc-Iz7" firstAttribute="top" secondItem="Nwj-S4-JfV" secondAttribute="top" id="hnR-Js-fK4"/>
+                                <constraint firstItem="PEq-8x-kda" firstAttribute="top" secondItem="Nwj-S4-JfV" secondAttribute="top" id="lwB-hg-6vM"/>
+                                <constraint firstItem="iKl-mc-Iz7" firstAttribute="leading" secondItem="Nwj-S4-JfV" secondAttribute="leading" constant="15" id="s1Q-3E-SVC"/>
+                                <constraint firstItem="PEq-8x-kda" firstAttribute="leading" secondItem="Nwj-S4-JfV" secondAttribute="leading" id="xd6-ag-9Er"/>
+                                <constraint firstAttribute="bottom" secondItem="PEq-8x-kda" secondAttribute="bottom" id="zJm-ZR-jD8"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Nwj-S4-JfV" secondAttribute="trailing" id="AYH-RW-q8o"/>
+                        <constraint firstAttribute="bottom" secondItem="Nwj-S4-JfV" secondAttribute="bottom" id="RZN-x4-zkz"/>
+                        <constraint firstItem="Nwj-S4-JfV" firstAttribute="leading" secondItem="rzP-6p-qhe" secondAttribute="leading" id="ayA-uy-eq8"/>
+                        <constraint firstItem="Nwj-S4-JfV" firstAttribute="top" secondItem="rzP-6p-qhe" secondAttribute="top" id="dD6-dn-dHd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rzP-6p-qhe" secondAttribute="trailing" id="6gU-pq-xTe"/>
+                <constraint firstItem="rzP-6p-qhe" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="KE5-oB-i7A"/>
+                <constraint firstItem="rzP-6p-qhe" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Xht-iH-tmo"/>
+                <constraint firstItem="rzP-6p-qhe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="k7L-0z-dtk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bg_view" destination="Nwj-S4-JfV" id="ipN-fC-Qpy"/>
+                <outlet property="image_btn" destination="c8Y-wk-4uk" id="BOW-dv-rKa"/>
+                <outlet property="mainBG_view" destination="rzP-6p-qhe" id="a2Y-dO-WlI"/>
+                <outlet property="radio_btn" destination="PEq-8x-kda" id="n2m-7n-Mmz"/>
+                <outlet property="title_lbl" destination="0kM-pg-CW3" id="9dR-NX-0QN"/>
+                <outlet property="totalKey_lbl" destination="Una-03-6Um" id="vdb-PC-n7S"/>
+                <outlet property="totalValue_lbl" destination="Wyi-LX-SDf" id="DaV-eP-xNy"/>
+            </connections>
+            <point key="canvasLocation" x="90.5" y="-251.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Radio_off" width="20" height="20"/>
+    </resources>
+</document>

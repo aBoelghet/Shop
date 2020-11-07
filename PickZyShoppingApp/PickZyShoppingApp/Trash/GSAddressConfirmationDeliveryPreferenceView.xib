@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GSAddressConfirmationDeliveryPreferenceView" customModule="Shopor" customModuleProvider="target">
+            <connections>
+                <outlet property="bg_view" destination="Ru9-LF-33v" id="PTs-F6-uv2"/>
+                <outlet property="datePicker" destination="r3d-GL-YJj" id="nNa-7k-mXU"/>
+                <outlet property="pickerView" destination="kBK-3g-hfw" id="JWi-VD-0cr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ru9-LF-33v">
+                    <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="VUG-8l-ekn">
+                            <rect key="frame" x="10" y="10" width="355" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBP-rq-wP6" customClass="SABaseButton" customModule="Shopor" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="152.5" height="30"/>
+                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="Cancel"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                    </variation>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gk1-M6-CgE" customClass="SABaseButton" customModule="Shopor" customModuleProvider="target">
+                                    <rect key="frame" x="202.5" y="0.0" width="152.5" height="30"/>
+                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="Done"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                    </variation>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="9oI-Zy-8vR">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="35"/>
+                                </constraint>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fgD-kJ-Zo6">
+                            <rect key="frame" x="0.0" y="50" width="375" height="150"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T2P-ey-6jI" userLabel="bg_view" customClass="SACornerEdgeView" customModule="Shopor" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="225" height="150"/>
+                                    <subviews>
+                                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="r3d-GL-YJj">
+                                            <rect key="frame" x="0.0" y="5" width="225" height="140"/>
+                                            <date key="date" timeIntervalSinceReferenceDate="556093365.19659603">
+                                                <!--2018-08-16 06:22:45 +0000-->
+                                            </date>
+                                        </datePicker>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="r3d-GL-YJj" firstAttribute="top" secondItem="T2P-ey-6jI" secondAttribute="top" constant="5" id="Bcw-Nz-Qca"/>
+                                        <constraint firstAttribute="bottom" secondItem="r3d-GL-YJj" secondAttribute="bottom" constant="5" id="IrB-vw-Gnr"/>
+                                        <constraint firstItem="r3d-GL-YJj" firstAttribute="leading" secondItem="T2P-ey-6jI" secondAttribute="leading" id="K85-Eh-Blo"/>
+                                        <constraint firstAttribute="trailing" secondItem="r3d-GL-YJj" secondAttribute="trailing" id="Ssr-k7-fzs"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5F2-fn-GbD" userLabel="bg_view">
+                                    <rect key="frame" x="235" y="0.0" width="140" height="150"/>
+                                    <subviews>
+                                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kBK-3g-hfw">
+                                            <rect key="frame" x="0.0" y="5" width="140" height="140"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </pickerView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="kBK-3g-hfw" secondAttribute="trailing" id="E4Z-Gy-QNc"/>
+                                        <constraint firstItem="kBK-3g-hfw" firstAttribute="leading" secondItem="5F2-fn-GbD" secondAttribute="leading" id="WqW-6F-Chb"/>
+                                        <constraint firstAttribute="bottom" secondItem="kBK-3g-hfw" secondAttribute="bottom" constant="5" id="e2x-Od-hG3"/>
+                                        <constraint firstItem="kBK-3g-hfw" firstAttribute="top" secondItem="5F2-fn-GbD" secondAttribute="top" constant="5" id="ind-go-2PZ"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="T2P-ey-6jI" firstAttribute="width" secondItem="fgD-kJ-Zo6" secondAttribute="width" multiplier="0.6" id="ncj-WI-IyU"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="6Ub-VD-wZg">
+                            <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                        </constraint>
+                        <constraint firstAttribute="trailing" secondItem="VUG-8l-ekn" secondAttribute="trailing" constant="10" id="6V9-ec-QIA"/>
+                        <constraint firstItem="VUG-8l-ekn" firstAttribute="leading" secondItem="Ru9-LF-33v" secondAttribute="leading" constant="10" id="8jr-ek-K1f"/>
+                        <constraint firstItem="VUG-8l-ekn" firstAttribute="top" secondItem="Ru9-LF-33v" secondAttribute="top" constant="10" id="Ef8-Op-9z7"/>
+                        <constraint firstAttribute="bottom" secondItem="fgD-kJ-Zo6" secondAttribute="bottom" id="Mlc-SI-qul"/>
+                        <constraint firstItem="fgD-kJ-Zo6" firstAttribute="leading" secondItem="Ru9-LF-33v" secondAttribute="leading" id="S2V-4B-ivi"/>
+                        <constraint firstAttribute="trailing" secondItem="fgD-kJ-Zo6" secondAttribute="trailing" id="aii-Q5-pru"/>
+                        <constraint firstItem="fgD-kJ-Zo6" firstAttribute="top" secondItem="VUG-8l-ekn" secondAttribute="bottom" constant="10" id="vqC-Gi-Ehg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ru9-LF-33v" secondAttribute="trailing" id="BSg-Gu-r88"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Ru9-LF-33v" secondAttribute="bottom" id="Kk0-FG-Gb7"/>
+                <constraint firstItem="Ru9-LF-33v" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="lDC-q9-TZd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
